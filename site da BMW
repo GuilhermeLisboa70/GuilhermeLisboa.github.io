@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMW - Seu Carro de Alto Desempenho</title>
+  <meta name="description" content="BMW: Desempenho, luxo e inovação. Descubra os modelos, agende um test drive e viva a experiência BMW.">
+  <meta name="keywords" content="BMW, carros, test drive, luxo, desempenho, inovação">
+  <style>
+    :root {
+      --primary-color: #000;
+      --secondary-color: #444;
+      --text-color: #333;
+      --background-color: #f4f4f4;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    .topbar {
+      background-color: var(--text-color);
+      color: var(--white);
+      padding: 10px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .navbar {
+      background-color: var(--primary-color);
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      width: 120px;
+      height: auto;
+      margin-left: 20px;
+    }
+
+    .navbar nav {
+      display: flex;
+      gap: 15px;
+      margin-right: 20px;
+    }
+
+    .navbar nav a {
+      color: var(--white);
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar nav a:hover {
+      background-color: var(--secondary-color);
+      border-radius: 4px;
+    }
+
+    .hero {
+      background: url('https://cdn.pixabay.com/photo/2022/06/20/20/36/car-7274571_1280.jpg') no-repeat center center;
+      background-size: cover;
+      height: 400px;
+      color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      position: relative;
+      font-size: 50px;
+      font-weight: 700;
+      z-index: 1;
+    }
+
+    .content {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--text-color);
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .highlights, .gallery, .testimonials {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .highlights h3,
+    .gallery h3,
+    .testimonials h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .highlights p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .testimonial {
+      margin: 20px auto;
+      max-width: 600px;
+      font-style: italic;
+      color: #444;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    button {
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .footer {
+      background-color: var(--text-color);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar nav {
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 0;
+      }
+
+      .navbar .logo {
+        margin-left: 0;
+      }
+
+      .gallery img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <p>Exclusividade, inovação e desempenho – Tudo o que você espera da BMW</p>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="https://cdn.pixabay.com/photo/2020/01/09/20/34/bmw-4753868_1280.jpg" alt="Logotipo BMW" class="logo" loading="lazy">
+    <nav>
+      <a href="https://www.bmw.com.br/pt/all-models.html" target="_blank" rel="noopener">Modelos</a>
+      <a href="https://www.bmw.com.br/pt/topics/descubra/bmw-tecnologia.html" target="_blank" rel="noopener">Tecnologia</a>
+      <a href="https://www.bmw.com.br/pt/topics/fascination-bmw/bmw-news.html" target="_blank" rel="noopener">Notícias</a>
+      <a href="https://www.bmw.com.br/pt/footer/contact.html" target="_blank" rel="noopener">Contato</a>
+      <a href="https://www.bmw.com.br/pt/footer/contact.html" target="_blank" rel="noopener">Agende um Test Drive</a>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Descubra o Poder da BMW</h1>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="content">
+    <h2>Conquiste as estradas com a BMW</h2>
+    <p>A BMW oferece uma combinação única de desempenho, luxo e inovação. Desde o design arrojado até a engenharia de precisão, cada detalhe foi pensado para proporcionar uma experiência de direção incomparável. Explore os modelos mais recentes e prepare-se para viver a emoção ao volante.</p>
+  </div>
+
+  <!-- Destaques -->
+  <div class="highlights">
+    <h3>Destaques BMW</h3>
+    <p>Design sofisticado e esportivo</p>
+    <p>Tecnologia de ponta com conectividade inteligente</p>
+    <p>Eficiência energética e motores potentes</p>
+
+    <h3>Agende seu Test Drive</h3>
+    <p>Quer sentir a emoção de dirigir um BMW? Agende agora mesmo o seu test drive em uma de nossas concessionárias.</p>
+    <a href="https://www.bmw.com.br/pt/footer/contact.html" target="_blank">
+      <button style="margin-top: 15px; padding: 10px 20px; font-size: 16px; background-color: var(--primary-color); color: var(--white); border: none; cursor: pointer;">Agendar Test Drive</button>
+    </a>
+  </div>
+
+  <!-- Galeria -->
+  <div class="gallery">
+    <h3>Galeria</h3>
+    <img src="https://cdn.pixabay.com/photo/2022/10/25/20/24/bmw-7546825_960_720.jpg" alt="BMW modelo esportivo em exposição" loading="lazy">
+    <img src="https://cdn.pixabay.com/photo/2018/09/10/01/21/gear-shifter-3665960_1280.jpg" alt="Interior de um BMW com câmbio moderno" loading="lazy">
+    <img src="https://cdn.pixabay.com/photo/2022/10/26/15/22/bmw-7548777_1280.jpg" alt="BMW em movimento na estrada" loading="lazy">
+  </div>
+
+  <!-- Depoimentos -->
+  <div class="testimonials">
+    <h3>O que dizem nossos clientes</h3>
+    <div class="testimonial">
+      “A experiência de dirigir um BMW é simplesmente inigualável. Estilo e desempenho impecáveis.”
+      <span>– Lucas M., São Paulo</span>
+    </div>
+    <div class="testimonial">
+      “Comprei meu primeiro BMW este ano e já me apaixonei. Recomendo para quem busca qualidade e emoção.”
+      <span>– Mariana S., Curitiba</span>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>&copy; 2025 BMW. Todos os direitos reservados.</p>
+  </div>
+
+</body>
+</html>
